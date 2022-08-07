@@ -26,7 +26,7 @@ export class CursorComponent implements OnInit {
       gsap.to(this.smallBall.nativeElement, {
         duration: 0.1,
         x: e.pageX - 5,
-        y: e.pageY - 10,
+        y: e.pageY - 8,
       });      
     }
   }

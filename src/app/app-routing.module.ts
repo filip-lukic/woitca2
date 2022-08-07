@@ -12,12 +12,17 @@ const routes: Routes = [
   {
     path: 'creative',
     component: CreativeComponent,
-    data: { animation: 1 },
+    data: { animation: 'creative' },
+  },
+  {
+    path: 'creative/:project',
+    component: CreativeComponent,
+    data: { animation: 'creative' },
   },
   {
     path: 'motion',
     component: MotionComponent,
-    data: { animation: 2 },
+    data: { animation: 'motion' },
   },
 ];
 

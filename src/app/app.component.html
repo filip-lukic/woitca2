@@ -7,10 +7,10 @@
     </div>
     <ul>
       <li>
-        <a [routerLink]="['/creative']">Creative</a>
+        <a [routerLink]="['/creative']" [routerLinkActive]="'active-creative'">Creative</a>
       </li>
       <li>
-        <a [routerLink]="['/motion']">Motion</a>
+        <a [routerLink]="['/motion']" [routerLinkActive]="'active-motion'">Motion</a>
       </li>
     </ul>
   </nav>
@@ -18,4 +18,18 @@
 <main [@routeAnimations]="getRouteAnimationData()">
   <router-outlet></router-outlet>
 </main>
+<footer>
+  <div class="container">
+    <div class="signature">
+      <a href="/">
+        <img src="/assets/signature.svg" alt="Woitca">
+      </a>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://www.behance.net/">Behance</a>
+      <a href="https://www.facebook.com/">Meta</a>
+    </div>
+  </div>
+</footer>
 <app-cursor></app-cursor>
