@@ -1,68 +1,114 @@
-<swiper [config]="config">
-  <ng-template swiperSlide>
-    <div style="width: 100vw; height: 100vh; overflow: hidden;">
-      <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" style="width: 100vw; height: 100%"/>
-      <div class="swiper-shutters-image-clones">
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="10%" style=" width: 20%; left: 0%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: 0%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -100%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -200%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -300%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_nike.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -400%;"/>
-        </div>
+<div class="motion-slider">
+  <swiper [config]="config">
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video 
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_nike.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>NIKE</h2>
+        <h3>Tuned Air Max Plus 3</h3>
       </div>
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div style="width: 100vw; height: 100vh; overflow: hidden;">
-      <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" style="width: 100vw; height: 100%"/>
-      <div class="swiper-shutters-image-clones">
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="10%" style=" width: 20%; left: 0%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: 0%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -100%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -200%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -300%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_banck.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -400%;"/>
-        </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_banck.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BANCK</h2>
+        <h3>Subtitle</h3>
       </div>
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div style="width: 100vw; height: 100vh; overflow: hidden;">
-      <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" style="width: 100vw; height: 100%"/>
-      <div class="swiper-shutters-image-clones">
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="10%" style=" width: 20%; left: 0%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: 0%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -100%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -200%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -300%;"/>
-        </div>
-        <div class="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%;">
-          <img class="swiper-shutters-image" src="/assets/motion_slider_blindplecken.png" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -400%;"/>
-        </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_blindplecken.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BLINDPLECKEN</h2>
+        <h3>Legend Number 96</h3>
       </div>
-    </div>
-  </ng-template>
-</swiper>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video 
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_nike.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>NIKE</h2>
+        <h3>Tuned Air Max Plus 3</h3>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_banck.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BANCK</h2>
+        <h3>Subtitle</h3>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_blindplecken.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BLINDPLECKEN</h2>
+        <h3>Legend Number 96</h3>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video 
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_nike.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>NIKE</h2>
+        <h3>Tuned Air Max Plus 3</h3>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_banck.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BANCK</h2>
+        <h3>Subtitle</h3>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide">
+        <video
+          (mouseenter)="play($event)" (mouseleave)="stop($event)"
+          muted="muted" poster="/assets/motion_slider_blindplecken.png"
+        >
+          <source src="/assets/videos/test_video.mp4">
+        </video>
+        <h2>BLINDPLECKEN</h2>
+        <h3>Legend Number 96</h3>
+      </div>
+    </ng-template>
+  
+  </swiper> 
+    <div class="swiper-scrollbar"></div>
+</div>

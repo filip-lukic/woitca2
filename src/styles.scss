@@ -5,6 +5,8 @@
 
 @import '~swiper/scss';
 @import '~swiper/css/parallax';
+@import '~swiper/css/mousewheel';
+@import '~swiper/css/scrollbar';
 
 html {
   font-family: $fontFamily;
@@ -113,22 +115,23 @@ main {
   .creative-slider {
     width: 100%; 
     height: 100vh; 
-    background: url(/assets/creative_slider_nike.webp) center; 
-    background-size: cover;
 
     .slide {
       display: flex;
       align-items: center; 
       width: 100%; 
       height: 100vh;
+      z-index: 5;
 
       .slide-number {
         font-size: 80px; 
         font-weight: 600;
+        z-index: 5;
       }
 
       .slide-content {
         margin-left: 180px;
+        z-index: 5;
 
         span {
           font-size: 13px;
@@ -148,6 +151,45 @@ main {
           font-size: 13px;
           color: #FFF;
         }
+      }
+    }
+  }
+
+  .motion-slider {
+    width: 100%; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    
+    .slide {
+      &:hover {
+        h2 {
+          color: $colorMotion;
+        }
+      }
+
+      video {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      h2 {
+        padding: 20px 20px 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #FFF;
+        transition: color .3s ease-in-out;
+      }
+
+      h3 {
+        padding: 0px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #555;
+        transition: color .3s ease-in-out;
       }
     }
   }
@@ -187,6 +229,7 @@ main {
     }
   }
 }
+
 
 footer {
   position: fixed;

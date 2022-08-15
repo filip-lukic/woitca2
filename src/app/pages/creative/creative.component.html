@@ -1,14 +1,68 @@
 <div class="creative-slider">
-  <div class="slide container">
-    <div class="slide-number">1.</div>
-    <div class="slide-content">
-        <span>Nike Air Max Plus 3</span>
-        <h2>Tuned<br>Air Max</h2>
-        <a [routerLink]="['/creative', 'nike']">
-          <div class="circle">
-            <div class="plus"></div>
-          </div> Discover More
-        </a>
-    </div>
-  </div>
+  <swiper [config]="config">
+    <ng-template swiperSlide>
+      <div class="slide container" style="width: 100vw; height: 100vh; overflow: hidden;">
+        <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" style="width: 100vw; height: 100%"/>
+        <div class="swiper-shutters-image-clones">
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="10%" style=" width: 20%; left: 0%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: 0%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -100%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -200%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -300%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -400%;"/>
+          </div>
+        </div>
+        <div class="slide-number">1.</div>
+        <div class="slide-content">
+            <span>Nike Air Max Plus 3</span>
+            <h2>Tuned<br>Air Max</h2>
+            <a [routerLink]="['/creative', 'nike']">
+              <div class="circle">
+                <div class="plus"></div>
+              </div> Discover More
+            </a>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="slide container" style="width: 100vw; height: 100vh; overflow: hidden;">
+        <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" style="width: 100vw; height: 100%"/>
+        <div class="swiper-shutters-image-clones">
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="10%" style=" width: 20%; left: 0%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: 0%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -100%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -200%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -300%;"/>
+          </div>
+          <div class="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%;">
+            <img class="swiper-shutters-image" src="/assets/creative_slider_nike.webp" data-swiper-parallax="10%" style="width: 100vw; height: 100%; left: -400%;"/>
+          </div>
+        </div>
+        <div class="slide-number">1.</div>
+        <div class="slide-content">
+            <span>Nike Air Max Plus 3</span>
+            <h2>Tuned<br>Air Max</h2>
+            <a [routerLink]="['/creative', 'nike']">
+              <div class="circle">
+                <div class="plus"></div>
+              </div> Discover More
+            </a>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
 </div>
