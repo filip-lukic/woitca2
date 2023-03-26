@@ -34,7 +34,7 @@ export class AppComponent {
 
     setTimeout(() => {
       this.renderer.addClass(document.querySelector('.loading'), 'loaded');
-    }, 800);
+    }, 3000);
   }
 
   getRouteAnimationData() {
