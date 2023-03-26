@@ -3,10 +3,10 @@
 @import 'styles/variables';
 @import 'styles/cursor';
 
-@import '~swiper/scss';
-@import '~swiper/css/parallax';
-@import '~swiper/css/mousewheel';
-@import '~swiper/css/scrollbar';
+@import 'swiper/scss';
+@import 'swiper/css/parallax';
+@import 'swiper/css/mousewheel';
+@import 'swiper/css/scrollbar';
 
 html {
   font-family: $fontFamily;
